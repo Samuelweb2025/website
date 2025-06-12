@@ -10,7 +10,6 @@
       box-sizing: border-box;
     }
     html, body {
-      
       background-color: #f2f2f2;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
@@ -27,20 +26,31 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
     .table-container {
-      margin-top: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .map-image {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+      display: block;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      background-color: #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      overflow: hidden;
     }
-    td {
+    th, td {
       border: 1px solid #ccc;
-      padding: 16px;
-      text-align: center;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 15px;
+    }
+    th {
+      background-color: #e0e0e0;
+      font-weight: bold;
     }
     .social-links {
       text-align: center;
@@ -62,23 +72,60 @@
   </style>
 </head>
 <body>
-  <div class="image-container">
-    <img src="https://cdn.shopify.com/s/files/1/0688/6450/8189/files/A_212121211.jpg?v=1749563215" alt="Daily Fitness Homepage">
-  </div>
+  <div class="wrapper">
+    <div class="image-container">
+      <img src="https://cdn.shopify.com/s/files/1/0688/6450/8189/files/A_212121211.jpg?v=1749563215" alt="Daily Fitness Homepage">
+    </div>
+    <br>
+    <div class="table-container">
+      <img class="map-image" src="https://cdn.shopify.com/s/files/1/0688/6450/8189/files/map.jpg?v=1749697129" alt="daily fitness map">
+      <table>
+        <tr>
+          <th colspan="2">📍 地點資訊</th>
+        </tr>
+        <tr>
+          <td>位置</td>
+          <td>上環地鐵站 (A1出口) 步行約3分鐘</td>
+        </tr>
+        <tr>
+          <th colspan="2">🏋️‍♀️ 場地設施</th>
+        </tr>
+        <tr>
+          <td colspan="2">Inbody、Locker、更衣毛巾（大/小）、鹼性水機、獨立淋浴間x2、獨立洗手間</td>
+        </tr>
+        <tr>
+          <th colspan="2">💪 健身器械</th>
+        </tr>
+        <tr>
+          <td colspan="2">跑步機、引體上升機、下拉背機、滑輪交叉訓練器、腿部伸展與彎曲機、史密夫機</td>
+        </tr>
+        <tr>
+          <th colspan="2">🧘‍♂️ 運動用品</th>
+        </tr>
+        <tr>
+          <td colspan="2">啞鈴、槓鈴、壺鈴、藥球、沙包、瑜伽墊、健身球、彈力帶、TRX</td>
+        </tr>
+        <tr>
+          <th colspan="2">🕕 開放時間</th>
+        </tr>
+        <tr>
+          <td colspan="2">每日 06:00 - 23:00</td>
+        </tr>
+      </table>
+    </div>
 
- <p> 
-  <div class="social-links">
-  © 2025, Daily Fitness. All rights reserved.
-  </div>
-</p>
-    
-  <div class="social-links">
-    <a href="https://www.facebook.com/profile.php?id=100090668120172" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Icon">Facebook
-    </a>
-    <a href="https://www.instagram.com/dailyfitness_sheungwan" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">Instagram
-    </a>
+    <div class="social-links">
+      © 2025, Daily Fitness. All rights reserved.
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=100090668120172" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Icon">Facebook
+      </a>
+      <a href="https://www.instagram.com/dailyfitness_sheungwan" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">Instagram
+      </a>
+    </div>
   </div>
 </body>
 </html>
